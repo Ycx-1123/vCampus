@@ -1,4 +1,4 @@
-package vCampus.common;
+package vCampus.common.vo;
 
 import java.io.Serializable;
 
