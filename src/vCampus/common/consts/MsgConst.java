@@ -20,6 +20,13 @@ public final class MsgConst {
     public static final String UPDATE_STUDENT = "UPDATE_STUDENT";
     public static final String DELETE_STUDENT = "DELETE_STUDENT";
     
+    //====选课模块type常量====
+    public static final String QUERY_ALL_COURSES="QUERY_ALL_COURSES";//查询所有课程
+    public static final String SELECT_COURSE="SELECT_COURSE";//选课
+    public static final String QUIT_COURSE="QUIT_COURSE";//退课
+    public static final String GET_SELECTED_COURSES="GET_SELECTED_COURSES";//查询已选课程
+    
+    
     private MsgConst(){
     }
 }
