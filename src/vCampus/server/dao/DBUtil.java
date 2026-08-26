@@ -18,7 +18,7 @@ public class DBUtil {
 				conn.close();
 			} catch(SQLException e) {
 				e.printStackTrace();
-			}
+			} 
 		}
 	}
 }
