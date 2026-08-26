@@ -18,7 +18,7 @@ public class Product {
     private String description;
 
     // 无参构造方法
-    public Product() {}
+    public Product() {} 
 
     // 带参构造方法（方便创建对象）
     public Product(int id, String name, double price, int stock, String description) {
