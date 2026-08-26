@@ -2,9 +2,7 @@ package vCampus.common.vo;
 
 import java.io.Serializable;
 
-/**
- * 图书馆子模块 - 图书实体类 (VO)
- */
+
 public class Book implements Serializable {
 	
 	// 推荐添加 serialVersionUID，保证网络传输时版本一致，防止反序列化报错
