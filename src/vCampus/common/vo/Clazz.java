@@ -6,7 +6,6 @@ public class Clazz implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	private String cid;
-	private String cname;
 	//专业名称
 	private String expername;
 	//所属部门编号
@@ -15,9 +14,8 @@ public class Clazz implements Serializable{
 	public Clazz() {
 	}
 	
-	public Clazz(String cid,String cname,String expername,String deptid) {
+	public Clazz(String cid,String expername,String deptid) {
 		this.cid = cid;
-		this.cname = cname;
 		this.expername = expername;
 		this.deptid = deptid;
 	}
@@ -28,14 +26,6 @@ public class Clazz implements Serializable{
 
     public void setCid(String cid) {
         this.cid = cid;
-    }
-
-    public String getCname() {
-        return cname;
-    }
-
-    public void setCname(String cname) {
-        this.cname = cname;
     }
 
     public String getExpername() {
