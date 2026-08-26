@@ -18,7 +18,6 @@ public class Book implements Serializable {
 
 	// --- 构造函数 ---
 	
-	// 1. 无参构造函数（反射和某些框架必须要有无参构造）
 	public Book() {
 	}
 
