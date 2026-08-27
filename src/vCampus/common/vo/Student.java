@@ -5,70 +5,85 @@ import java.io.Serializable;
 public class Student implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
-	private String sid;
-	private String sname;
-	private String sex;
-	private String cid;
-	private String email;
-	private String idCard;
-	
-	public Student() {
-	}
-	
-	public Student(String sid, String sname, String sex, String cid, String email, String idCard) {
-        this.sid = sid;
-        this.sname = sname;
-        this.sex = sex;
-        this.cid = cid;
-        this.email = email;
-        this.idCard = idCard;
-    }
-	
-	public String getSid() {
-        return sid;
+	private String stuid;
+    private String stuname;
+    private String gender;
+    private String clazzid;       //外键：所属班级编号
+    private String enrollYear;    //入学年份（年级）
+    private String stuCard;        //一卡通账号
+    private boolean isLocked;     //学籍是否锁定 true=锁定
+    private double finishedCredit;//已经修完的总学分
+    private double requiredCredit;//毕业最低所需学分
+
+    public Student() {
     }
 
-    public void setSid(String sid) {
-        this.sid = sid;
+    public Student(String stuid, String stuname, String gender, String clazzid,
+                   String enrollYear, String stuCard, boolean isLocked, double finishedCredit, double requiredCredit) {
+        this.stuid = stuid;
+        this.stuname = stuname;
+        this.gender = gender;
+        this.clazzid = clazzid;
+        this.enrollYear = enrollYear;
+        this.stuCard = stuCard;
+        this.isLocked = isLocked;
+        this.finishedCredit = finishedCredit;
+        this.requiredCredit = requiredCredit;
     }
 
-    public String getSname() {
-        return sname;
+    public String getStuid() {
+        return stuid;
     }
-
-    public void setSname(String sname) {
-        this.sname = sname;
+    public void setStuid(String stuid) {
+        this.stuid = stuid;
     }
-
-    public String getSex() {
-        return sex;
+    public String getStuname() {
+        return stuname;
     }
-
-    public void setSex(String sex) {
-        this.sex = sex;
+    public void setStuname(String stuname) {
+        this.stuname = stuname;
     }
-
-    public String getCid() {
-        return cid;
+    public String getGender() {
+        return gender;
     }
-
-    public void setCid(String cid) {
-        this.cid = cid;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
-
-    public String getEmail() {
-        return email;
+    public String getClazzid() {
+        return clazzid;
     }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setClazzid(String clazzid) {
+        this.clazzid = clazzid;
     }
-
-    public String getIdCard() {
-        return idCard;
+    public String getEnrollYear() {
+        return enrollYear;
     }
-
-    public void setIdCard(String idCard) {
-        this.idCard = idCard;
+    public void setEnrollYear(String enrollYear) {
+        this.enrollYear = enrollYear;
+    }
+    //一卡通账号 getter‑setter
+    public String getStuCard() {
+        return stuCard;
+    }
+    public void setStuCard(String stuCard) {
+        this.stuCard = stuCard;
+    }
+    public boolean isLocked() {
+        return isLocked;
+    }
+    public void setLocked(boolean locked) {
+        isLocked = locked;
+    }
+    public double getFinishedCredit() {
+        return finishedCredit;
+    }
+    public void setFinishedCredit(double finishedCredit) {
+        this.finishedCredit = finishedCredit;
+    }
+    public double getRequiredCredit() {
+        return requiredCredit;
+    }
+    public void setRequiredCredit(double requiredCredit) {
+        this.requiredCredit = requiredCredit;
     }
 }
