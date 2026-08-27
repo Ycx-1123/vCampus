@@ -19,7 +19,7 @@ public class Student implements Serializable {
     }
 
     public Student(String stuid, String stuname, String gender, String clazzid,
-                   String enrollYear, String stuCard, boolean isLocked, double finishedCredit, double requiredCredit) {
+                   String enrollYear, String stuCard, Boolean isLocked, Double finishedCredit, Double requiredCredit) {
         this.stuid = stuid;
         this.stuname = stuname;
         this.gender = gender;
@@ -68,19 +68,19 @@ public class Student implements Serializable {
     public void setStuCard(String stuCard) {
         this.stuCard = stuCard;
     }
-    public boolean isLocked() {
+    public Boolean isLocked() {
         return isLocked;
     }
     public void setLocked(boolean locked) {
         isLocked = locked;
     }
-    public double getFinishedCredit() {
+    public Double getFinishedCredit() {
         return finishedCredit;
     }
     public void setFinishedCredit(double finishedCredit) {
         this.finishedCredit = finishedCredit;
     }
-    public double getRequiredCredit() {
+    public Double getRequiredCredit() {
         return requiredCredit;
     }
     public void setRequiredCredit(double requiredCredit) {
