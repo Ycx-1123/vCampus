@@ -11,9 +11,9 @@ public class Student implements Serializable {
     private String clazzid;       //外键：所属班级编号
     private String enrollYear;    //入学年份（年级）
     private String stuCard;        //一卡通账号
-    private boolean isLocked;     //学籍是否锁定 true=锁定
-    private double finishedCredit;//已经修完的总学分
-    private double requiredCredit;//毕业最低所需学分
+    private Boolean isLocked;     //学籍是否锁定 true=锁定
+    private Double finishedCredit;//已经修完的总学分
+    private Double requiredCredit;//毕业最低所需学分
 
     public Student() {
     }
